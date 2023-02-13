@@ -1,0 +1,22 @@
+fullnameOverride: smssubscriber
+
+type: pubsub.natsstreaming
+version: v1
+metadata:  
+- name: natsURL
+  value: nats://srv01.example.com:4222,nats://srv02.example.com:4222  
+- name: natsStreamingClusterID
+  value: test-cluster
+- name: subscriptionType
+  value: queue
+- name: deliverNew
+  value: true  
+- name: ackWaitTime
+  value: 45000ms
+- name: maxInFlight
+  value: '6'
+- name: durableSubscriptionName
+  value: durable
+
+scopes:
+- another-api

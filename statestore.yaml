@@ -1,0 +1,10 @@
+fullnameOverride: statestore
+
+type: state.redis
+metadata:
+- name: redisHost
+  value: localhost:6379
+- name: redisPassword
+  value: assdf
+- name: actorStateStore
+  value: "true"
